@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="App4.WebApi"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    RequestedTheme="Dark">
+    <Page.Transitions>
+        <TransitionCollection>
+            <PaneThemeTransition/>
+        </TransitionCollection>
+    </Page.Transitions>
+
+
+
+    <StackPanel Orientation="Vertical" RenderTransformOrigin="0.491,0.496" Margin="0,10,0,0">
+        <Button x:ConnectionId='1' Content="Button" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Style="{StaticResource NavigationBackButtonNormalStyle}"                     />
+        <TextBlock Margin="34,0,34,0" Text="Id" TextWrapping="Wrap" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <TextBox x:ConnectionId='2' x:Name="Webapi_Id" Text="" Margin="34,0,34,8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <TextBlock Margin="34,0,34,0" Text="Name" TextWrapping="Wrap" HorizontalAlignment="Stretch"/>
+        <TextBox x:ConnectionId='3' x:Name="Name" TextWrapping="Wrap" Text="" Margin="34,0,34,8"/>
+        <TextBlock Margin="34,0,34,0" Text="CoordinateX" TextWrapping="Wrap" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <TextBox x:ConnectionId='4' x:Name="CoordinateX" TextWrapping="Wrap" Text="" Margin="34,5,34,8"/>
+        <TextBlock Margin="34,0,0,0" Text="CoordinateY" TextWrapping="Wrap" HorizontalAlignment="Left" Width="364" VerticalAlignment="Stretch"/>
+        <TextBox x:ConnectionId='5' x:Name="CoordinateY" TextWrapping="Wrap" Text="" Margin="34,0,34,8" HorizontalAlignment="Stretch"/>
+        <TextBlock Margin="34,0,0,0" Text="Volume" TextWrapping="Wrap" HorizontalAlignment="Left" Width="364" Height="25"/>
+        <TextBox x:ConnectionId='6' x:Name="Volume" TextWrapping="Wrap" Text="" Margin="34,0,34,8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <TextBlock Margin="34,0,0,0" Text="Status" TextWrapping="Wrap" HorizontalAlignment="Left" Width="364" VerticalAlignment="Stretch"/>
+        <TextBox x:ConnectionId='7' x:Name="isFull" TextWrapping="Wrap" Text="" Margin="34,0,34,18" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button x:ConnectionId='8' x:Name="Get" Content="GET" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="54" Margin="88,0,88,8"                     />
+        <Button x:ConnectionId='9' x:Name="Post" Content="POST" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="54" Margin="88,0,88,8"                      />
+        <Button x:ConnectionId='10' x:Name="Put" Content="PUT" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="54" Margin="88,0,88,0"                     />
+    </StackPanel>
+
+
+</Page>
+

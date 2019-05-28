@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10" IgnorableNamespaces="uap mp iot build" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  <!--
+    ЭТОТ ФАЙЛ МАНИФЕСТА ПАКЕТА СОЗДАН ПРОЦЕССОМ СБОРКИ.
+
+    Изменения этого файла будут потеряны при его повторном создании. Чтобы исправить ошибки в этом файле, измените исходный файл .appxmanifest.
+
+ Дополнительные сведения о файлах манифестов приложений см. по адресу http://go.microsoft.com/fwlink/?LinkID=241727
+  -->
+  <Identity Name="199764d4-f0f7-44d8-b18a-ff52fdc0cb36" Publisher="CN=TAKHIR LOVAZOV" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <mp:PhoneIdentity PhoneProductId="199764d4-f0f7-44d8-b18a-ff52fdc0cb36" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>App4</DisplayName>
+    <PublisherDisplayName>TAKHIR LOVAZOV</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.14393.0" MaxVersionTested="10.0.16299.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="RU-RU" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="App4.exe" EntryPoint="App4.App">
+      <uap:VisualElements DisplayName="App4" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="App4" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"></uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
+    <DeviceCapability Name="lowLevel" />
+    <DeviceCapability Name="serialcommunication">
+      <Device Id="any">
+        <Function Type="name:serialPort" />
+      </Device>
+    </DeviceCapability>
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
+    <build:Item Name="VisualStudio" Version="15.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Enterprise 2017" />
+    <build:Item Name="OperatingSystem" Version="10.0.17134.343 (WinBuild.160101.0800)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.28010.2016" />
+    <build:Item Name="ProjectGUID" Value="{DA94BB8E-B111-4557-A444-3483488061AE}" />
+    <build:Item Name="OptimizingToolset" Value="None" />
+    <build:Item Name="TargetRuntime" Value="Managed" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="15.0.28010.2016" />
+    <build:Item Name="WindowsIoT" Version="10.0.14393.0" />
+    <build:Item Name="WindowsMobile" Version="10.0.16299.0" />
+    <build:Item Name="MakePri.exe" Version="10.0.16299.15 (WinBuild.160101.0800)" />
+  </build:Metadata>
+</Package>

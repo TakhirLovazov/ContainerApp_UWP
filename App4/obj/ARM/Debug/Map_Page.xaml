@@ -1,0 +1,21 @@
+﻿<Page x:ConnectionId='1'
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    x:Class="App4.Map_Page"
+    x:FieldModifier="public"
+    mc:Ignorable="d"                     >
+    <Page.Transitions>
+        <TransitionCollection>
+            <ContentThemeTransition/>
+        </TransitionCollection>
+    </Page.Transitions>
+    <WebView x:ConnectionId='2' x:FieldModifier="public" x:Name="WebWiew1" HorizontalAlignment="Left" Height="758" VerticalAlignment="Top" Width="432"/>
+
+
+
+</Page>
+

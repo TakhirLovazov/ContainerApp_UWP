@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="App4.WebApi"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    RequestedTheme="Dark">
+    <Page.Transitions>
+        <TransitionCollection>
+            <PaneThemeTransition/>
+        </TransitionCollection>
+    </Page.Transitions>
+
+
+
+    <StackPanel HorizontalAlignment="Left" Width="432" Height="768" VerticalAlignment="Bottom">
+        
+        <TextBox x:ConnectionId='1' x:Name="Webapi_Text" TextWrapping="Wrap" Text="" Margin="34,55,34,34"/>
+        
+        <TextBox x:ConnectionId='2' x:Name="Id" TextWrapping="Wrap" Text="" Margin="34,25,34,0"/>
+        <TextBox x:ConnectionId='3' x:Name="Name" TextWrapping="Wrap" Text="" Margin="34,25,34,0"/>
+        <TextBox x:ConnectionId='4' x:Name="CoordinateX" TextWrapping="Wrap" Text="" Margin="34,25,34,0"/>
+        <TextBox x:ConnectionId='5' x:Name="CoordinateY" TextWrapping="Wrap" Text="" Margin="34,25,34,34"/>
+        <TextBox x:ConnectionId='6' x:Name="Webapi_Id" Text="" Margin="34,55,34,4"/>
+        <Button x:ConnectionId='7' x:Name="Get" Content="GET" HorizontalAlignment="Right" VerticalAlignment="Stretch" Height="54" Margin="0,15,88,0" Width="256"                     />
+        <Button x:ConnectionId='8' x:Name="Post" Content="POST" HorizontalAlignment="Right" VerticalAlignment="Stretch" Height="54" Margin="0,15,88,0" Width="256"                      />
+        <Button x:ConnectionId='9' x:Name="Put" Content="PUT" HorizontalAlignment="Right" VerticalAlignment="Stretch" Height="54" Margin="0,15,88,0" Width="256"                     />
+    </StackPanel>
+
+
+</Page>
+
